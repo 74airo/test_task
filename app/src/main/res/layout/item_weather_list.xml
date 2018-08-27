@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.66" />
+
+    <TextView
+        android:id="@+id/date_request_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/condition_icon_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/condition_name_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/condition_icon_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/date_request_text_view" />
+
+    <TextView
+        android:id="@+id/condition_descr_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/widget_margin_medium"
+        android:layout_marginStart="@dimen/widget_margin_medium"
+        android:layout_marginTop="@dimen/widget_margin_medium"
+        app:layout_constraintEnd_toStartOf="@+id/condition_icon_image_view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/condition_name_text_view" />
+
+    <ImageView
+        android:id="@+id/condition_icon_image_view"
+        android:layout_width="@dimen/icon_size_large"
+        android:layout_height="@dimen/icon_size_large"
+        android:layout_marginEnd="@dimen/widget_margin_medium"
+        android:layout_marginTop="@dimen/widget_margin_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/temp_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widget_margin_medium"
+        android:layout_marginEnd="@dimen/widget_margin_medium"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        app:layout_constraintBottom_toBottomOf="@+id/condition_icon_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toTopOf="@+id/condition_icon_image_view" />
+
+    <TextView
+        android:id="@+id/temp_max_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/widget_margin_medium"
+        android:layout_marginTop="@dimen/widget_margin_medium"
+        app:layout_constraintStart_toEndOf="@+id/temp_text_view"
+        app:layout_constraintTop_toTopOf="@+id/condition_icon_image_view" />
+
+    <TextView
+        android:id="@+id/temp_min_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widget_margin_medium"
+        android:layout_marginStart="@dimen/widget_margin_medium"
+        app:layout_constraintBottom_toBottomOf="@+id/condition_icon_image_view"
+        app:layout_constraintStart_toEndOf="@+id/temp_text_view" />
+
+    <TextView
+        android:id="@+id/humidity_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/widget_margin_small"
+        android:layout_marginStart="@dimen/widget_margin_medium"
+        android:layout_marginTop="@dimen/widget_margin_medium"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/condition_descr_text_view" />
+
+    <TextView
+        android:id="@+id/cloudiness_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/widget_margin_medium"
+        android:layout_marginStart="@dimen/widget_margin_small"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/humidity_text_view" />
+
+    <TextView
+        android:id="@+id/pressure_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widget_margin_medium"
+        android:layout_marginEnd="@dimen/widget_margin_small"
+        android:layout_marginStart="@dimen/widget_margin_medium"
+        android:layout_marginTop="@dimen/widget_margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/humidity_text_view" />
+
+    <TextView
+        android:id="@+id/wind_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/widget_margin_medium"
+        android:layout_marginEnd="@dimen/widget_margin_medium"
+        android:layout_marginStart="@dimen/widget_margin_small"
+        android:layout_marginTop="@dimen/widget_margin_medium"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/cloudiness_text_view" />
+</android.support.constraint.ConstraintLayout>
