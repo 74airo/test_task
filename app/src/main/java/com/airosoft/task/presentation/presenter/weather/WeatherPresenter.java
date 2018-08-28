@@ -76,7 +76,6 @@ public class WeatherPresenter extends MvpPresenter<WeatherFragmentView> {
         getWeatherInteractor = new GetWeatherInteractor(weatherRepository);
         getWeatherListInteractor = new GetWeatherListInteractor(weatherRepository);
         saveWeatherInteractor = new SaveWeatherInteractor(weatherRepository);
-
     }
 
     public void onResume(double lat, double lon) {
