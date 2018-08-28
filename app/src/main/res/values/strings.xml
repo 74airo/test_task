@@ -8,5 +8,19 @@
     <string name="btn_text_check_weather">Check weather</string>
     <string name="btn_text_add_place">Add place</string>
     <string name="btn_text_cancel">Cancel</string>
-    <string name="btn_text_ok">Ok</string>
+    <string name="btn_text_ok">OK</string>
+
+    <string name="pattern_date_time">dd/MM/YYYY \'at\' kk:mm </string>
+
+    <string name="pattern_temp">%s%d %s</string>
+    <string name="pattern_wind">Wind: %d %s, %s</string>
+    <string name="pattern_humidity">Humidity: %d%s</string>
+    <string name="pattern_pressure">Pressure: %.1f %s</string>
+    <string name="pattern_cloudiness">Cloudiness: %d%s</string>
+
+    <string name="weather_unit_temp_celsius">C\u00B0</string>
+    <string name="weather_unit_pressure">hPa</string>
+    <string name="weather_unit_humidity">%</string>
+    <string name="weather_unit_cloudiness">%</string>
+    <string name="weather_unit_wind">m/s</string>
 </resources>

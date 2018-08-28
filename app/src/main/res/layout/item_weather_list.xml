@@ -70,26 +70,32 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         app:layout_constraintBottom_toBottomOf="@+id/condition_icon_image_view"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="@+id/condition_icon_image_view" />
 
     <TextView
         android:id="@+id/temp_max_text_view"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="@dimen/widget_margin_medium"
         android:layout_marginTop="@dimen/widget_margin_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/temp_text_view"
         app:layout_constraintTop_toTopOf="@+id/condition_icon_image_view" />
 
     <TextView
         android:id="@+id/temp_min_text_view"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/widget_margin_medium"
+        android:layout_marginEnd="8dp"
         android:layout_marginStart="@dimen/widget_margin_medium"
         app:layout_constraintBottom_toBottomOf="@+id/condition_icon_image_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/temp_text_view" />
 
     <TextView
